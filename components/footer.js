@@ -68,7 +68,7 @@ class CustomFooter extends HTMLElement {
       <footer>
         <div class="footer-container">
           <div class="footer-about">
-            <div class="footer-logo">VulvaVital</div>
+            <div class="footer-logo">HyTalks</div>
             <p>Platform edukasi kesehatan wanita untuk pemahaman dan penanganan pruritus vulvae.</p>
           </div>
           
@@ -100,5 +100,6 @@ class CustomFooter extends HTMLElement {
     `;
   }
 }
+
 
 customElements.define('custom-footer', CustomFooter);
