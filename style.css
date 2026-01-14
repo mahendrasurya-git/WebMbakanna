@@ -1,0 +1,140 @@
+
+/* Base Styles */
+body {
+    scroll-behavior: smooth;
+    line-height: 1.6;
+    background-color: #fff9fb;
+    color: #5a3d5c;
+}
+
+/* Smooth Scroll Animation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.section.visible {
+    opacity: 1;
+}
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section-animate {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Color Adjustments */
+.bg-sage-100 {
+    background-color: #fff9fb;
+}
+
+.bg-sage-200 {
+    background-color: #f9f0f5;
+}
+
+.bg-sage-300 {
+    background-color: #f3e7f0;
+}
+
+.bg-sage-400 {
+    background-color: #e8d6e1;
+}
+
+.bg-sage-500 {
+    background-color: #d9c2d3;
+}
+
+.bg-lavender-100 {
+    background-color: #f5f0ff;
+}
+
+.bg-lavender-200 {
+    background-color: #eae0fa;
+}
+
+.bg-lavender-300 {
+    background-color: #d8c7f5;
+}
+
+.bg-peach-100 {
+    background-color: #fff0f5;
+}
+
+.bg-peach-200 {
+    background-color: #ffe6ee;
+}
+/* Tab Content */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-button.active {
+    font-weight: 600;
+}
+
+/* FAQ Animation */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+}
+
+.faq-toggle {
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(180deg);
+}
+
+/* Back to Top Button */
+#back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+}

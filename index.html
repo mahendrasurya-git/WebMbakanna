@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VulvaVital | Edukasi Pruritus Vulvae</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: {
+                            100: '#f1f7ed',
+                            200: '#e0e8d9',
+                            300: '#c8d8be',
+                            400: '#a8c293',
+                            500: '#88ab6a',
+                            600: '#6d8f50',
+                            700: '#557340',
+                            800: '#435c35',
+                            900: '#384d2e',
+                        },
+                        lavender: {
+                            100: '#f5f3ff',
+                            200: '#ede9fe',
+                            300: '#ddd6fe',
+                            400: '#c4b5fd',
+                            500: '#a78bfa',
+                            600: '#8b5cf6',
+                            700: '#7c3aed',
+                            800: '#6d28d9',
+                            900: '#5b21b6',
+                        },
+                        peach: {
+                            100: '#fff1f2',
+                            200: '#ffe4e6',
+                            300: '#fecdd3',
+                            400: '#fda4af',
+                            500: '#fb7185',
+                            600: '#f43f5e',
+                            700: '#e11d48',
+                            800: '#be123c',
+                            900: '#9f1239',
+                        }
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-sage-100 text-sage-900">
+    <!-- Navigation Component -->
+    <script src="components/navigation.js"></script>
+    <custom-navigation></custom-navigation>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-sage-300 to-sage-500 text-white py-20 px-4 md:px-8 lg:px-16">
+        <div class="container mx-auto max-w-6xl flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Pruritus Vulvae</h1>
+                <p class="text-xl md:text-2xl mb-8">Panduan Komprehensif untuk Memahami & Mengatasi Gatal Vulva</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#understanding" class="bg-white text-sage-700 hover:bg-sage-100 px-6 py-3 rounded-full font-medium transition duration-300">Mulai Belajar</a>
+                    <a href="#assessment" class="border-2 border-white text-white hover:bg-white hover:text-sage-700 px-6 py-3 rounded-full font-medium transition duration-300">Cek Gejala</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="http://static.photos/medical/640x360/42" alt="Ilustrasi Edukasi Kesehatan Wanita" class="rounded-lg shadow-xl w-full max-w-md">
+            </div>
+        </div>
+    </section>
+<!-- Interactive Cards -->
+    <section class="py-16 px-4 md:px-8 lg:px-16 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-bold text-center mb-12">Informasi Penting</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-sage-50 rounded-xl p-6 shadow-md hover:shadow-lg transition duration-300 border-l-4 border-lavender-500">
+                    <div class="bg-lavender-100 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="book-open" class="text-lavender-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Pengertian</h3>
+                    <p class="text-sage-700 mb-4">Memahami apa itu Pruritus Vulvae dan bagaimana mengenalinya.</p>
+                    <a href="#understanding" class="text-lavender-600 font-medium flex items-center hover:text-lavender-800 transition duration-300">
+                        Pelajari lebih lanjut
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-sage-50 rounded-xl p-6 shadow-md hover:shadow-lg transition duration-300 border-l-4 border-peach-500">
+                    <div class="bg-peach-100 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="alert-circle" class="text-peach-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Gejala</h3>
+                    <p class="text-sage-700 mb-4">Kenali tanda-tanda dan kapan harus mencari bantuan medis.</p>
+                    <a href="#symptoms" class="text-peach-600 font-medium flex items-center hover:text-peach-800 transition duration-300">
+                        Pelajari lebih lanjut
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-sage-50 rounded-xl p-6 shadow-md hover:shadow-lg transition duration-300 border-l-4 border-sage-500">
+                    <div class="bg-sage-100 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="activity" class="text-sage-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Penyebab</h3>
+                    <p class="text-sage-700 mb-4">Faktor internal dan eksternal yang dapat memicu kondisi ini.</p>
+                    <a href="#causes" class="text-sage-600 font-medium flex items-center hover:text-sage-800 transition duration-300">
+                        Pelajari lebih lanjut
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-sage-50 rounded-xl p-6 shadow-md hover:shadow-lg transition duration-300 border-l-4 border-lavender-400">
+                    <div class="bg-lavender-50 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="shield" class="text-lavender-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Pencegahan</h3>
+                    <p class="text-sage-700 mb-4">Langkah-langkah untuk mengurangi risiko dan mengelola gejala.</p>
+                    <a href="#prevention" class="text-lavender-500 font-medium flex items-center hover:text-lavender-700 transition duration-300">
+                        Pelajari lebih lanjut
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Understanding Section -->
+    <section id="understanding" class="py-16 px-4 md:px-8 lg:px-16 bg-sage-50">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <img src="http://static.photos/wellness/640x360/23" alt="Ilustrasi Edukasi Kesehatan" class="rounded-lg shadow-md w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Memahami Pruritus Vulvae</h2>
+                    <p class="text-lg mb-6">Pruritus vulvae adalah istilah medis untuk gatal pada area vulva (bagian luar organ kewanitaan). Kondisi ini dapat dialami oleh wanita dari berbagai usia, mulai dari remaja hingga menopause.</p>
+                    <p class="text-lg mb-6">Meskipun seringkali tidak berbahaya, gatal vulva yang persisten dapat mengganggu kualitas hidup dan mungkin menandakan kondisi medis tertentu yang perlu penanganan.</p>
+                    <div class="bg-lavender-50 border-l-4 border-lavender-500 p-4 rounded-r-lg">
+                        <p class="text-sage-800"><i data-feather="info" class="inline mr-2 text-lavender-600"></i> <strong>Fakta Penting:</strong> Sekitar 10-15% wanita mengalami pruritus vulvae setidaknya sekali dalam hidup mereka.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Symptoms & Causes (Tabbed Content) -->
+    <section class="py-16 px-4 md:px-8 lg:px-16 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex border-b border-sage-200 mb-8">
+                <button id="symptoms-tab" class="tab-button active py-3 px-6 font-medium text-lg border-b-2 border-lavender-500 text-lavender-600">Gejala</button>
+                <button id="causes-tab" class="tab-button py-3 px-6 font-medium text-lg text-sage-600 hover:text-sage-800">Penyebab</button>
+            </div>
+
+            <!-- Symptoms Content -->
+            <div id="symptoms-content" class="tab-content active">
+                <h2 id="symptoms" class="text-3xl font-bold mb-6">Gejala Pruritus Vulvae</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-peach-600 flex items-center">
+                            <i data-feather="alert-triangle" class="mr-2"></i> Gejala Umum
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="chevron-right" class="text-peach-500 mr-2 mt-1"></i>
+                                <span>Gatal yang dapat berkisar dari ringan hingga sangat intens</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="chevron-right" class="text-peach-500 mr-2 mt-1"></i>
+                                <span>Kemerahan atau pembengkakan pada area vulva</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="chevron-right" class="text-peach-500 mr-2 mt-1"></i>
+                                <span>Sensasi terbakar atau menyengat</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="chevron-right" class="text-peach-500 mr-2 mt-1"></i>
+                                <span>Kulit kering atau bersisik</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-peach-600 flex items-center">
+                            <i data-feather="alert-octagon" class="mr-2"></i> Tanda Darurat
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="x-circle" class="text-red-500 mr-2 mt-1"></i>
+                                <span>Gatal disertai demam atau kelelahan ekstrem</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="x-circle" class="text-red-500 mr-2 mt-1"></i>
+                                <span>Luka terbuka atau perdarahan</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="x-circle" class="text-red-500 mr-2 mt-1"></i>
+                                <span>Gejala tidak membaik setelah 2 minggu perawatan mandiri</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="x-circle" class="text-red-500 mr-2 mt-1"></i>
+                                <span>Muncul benjolan atau perubahan warna kulit yang tidak biasa</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    <h3 class="text-xl font-semibold mb-4 text-sage-700">Skala Intensitas Gatal</h3>
+                    <div class="bg-sage-50 p-6 rounded-lg">
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium">Ringan (1-3)</span>
+                                <span class="text-sm text-sage-600">Gatal sesekali, tidak mengganggu aktivitas</span>
+                            </div>
+                            <div class="w-full bg-sage-200 rounded-full h-2.5">
+                                <div class="bg-sage-400 h-2.5 rounded-full" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium">Sedang (4-6)</span>
+                                <span class="text-sm text-sage-600">Gatal sering, sedikit mengganggu tidur/aktivitas</span>
+                            </div>
+                            <div class="w-full bg-sage-200 rounded-full h-2.5">
+                                <div class="bg-sage-500 h-2.5 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium">Berat (7-10)</span>
+                                <span class="text-sm text-sage-600">Gatal terus-menerus, sangat mengganggu kualitas hidup</span>
+                            </div>
+                            <div class="w-full bg-sage-200 rounded-full h-2.5">
+                                <div class="bg-sage-700 h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Causes Content -->
+            <div id="causes-content" class="tab-content hidden">
+                <h2 id="causes" class="text-3xl font-bold mb-6">Penyebab Pruritus Vulvae</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-sage-600 flex items-center">
+                            <i data-feather="external-link" class="mr-2"></i> Faktor Eksternal
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="chevron-right" class="text-sage-500 mr-2 mt-1"></i>
+                                <span>Iritasi dari sabun, deterjen, atau produk kebersihan feminin</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="chevron-right" class="text-sage-500 mr-2 mt-1"></i>
+                                <span>Pakaian dalam yang ketat atau berbahan sintetis</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="chevron-right" class="text-sage-500 mr-2 mt-1"></i>
+                                <span>Pembalut atau pantyliner dengan pewangi</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="chevron-right" class="text-sage-500 mr-2 mt-1"></i>
+                                <span>Kebersihan yang berlebihan (mencuci terlalu sering)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-sage-600 flex items-center">
+                            <i data-feather="activity" class="mr-2"></i> Faktor Internal
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="chevron-right" class="text-sage-500 mr-2 mt-1"></i>
+                                <span>Infeksi jamur (kandidiasis vulvovaginal)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="chevron-right" class="text-sage-500 mr-2 mt-1"></i>
+                                <span>Perubahan hormon (menopause, kehamilan)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="chevron-right" class="text-sage-500 mr-2 mt-1"></i>
+                                <span>Kondisi kulit seperti eksim atau psoriasis</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="chevron-right" class="text-sage-500 mr-2 mt-1"></i>
+                                <span>Penyakit sistemik seperti diabetes</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    <img src="http://static.photos/medical/1024x576/15" alt="Ilustrasi Anatomi Vulva" class="rounded-lg shadow-md w-full">
+                    <p class="text-center text-sm text-sage-600 mt-2">Ilustrasi area vulva yang dapat mengalami pruritus (gatal)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prevention Section -->
+    <section id="prevention" class="py-16 px-4 md:px-8 lg:px-16 bg-lavender-50">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-bold mb-10 text-center">Pencegahan & Perawatan Harian</h2>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Do's -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-sage-500">
+                    <h3 class="text-xl font-semibold mb-6 text-sage-600 flex items-center">
+                        <i data-feather="check-circle" class="mr-2 text-sage-500"></i> Yang Harus Dilakukan
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="bg-sage-100 p-2 rounded-full mr-3">
+                                <i data-feather="check" class="text-sage-600"></i>
+                            </div>
+                            <span>Gunakan pakaian dalam katun 100% yang longgar</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-sage-100 p-2 rounded-full mr-3">
+                                <i data-feather="check" class="text-sage-600"></i>
+                            </div>
+                            <span>Cuci area vulva dengan air hangat dan sabun tanpa pewangi</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-sage-100 p-2 rounded-full mr-3">
+                                <i data-feather="check" class="text-sage-600"></i>
+                            </div>
+                            <span>Keringkan dengan handuk lembut atau biarkan kering udara setelah mandi</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-sage-100 p-2 rounded-full mr-3">
+                                <i data-feather="check" class="text-sage-600"></i>
+                            </div>
+                            <span>Ganti pembalut/pantyliner secara teratur selama menstruasi</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-sage-100 p-2 rounded-full mr-3">
+                                <i data-feather="check" class="text-sage-600"></i>
+                            </div>
+                            <span>Gunakan pelembab khusus area sensitif jika kulit kering</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Don'ts -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-peach-500">
+                    <h3 class="text-xl font-semibold mb-6 text-peach-600 flex items-center">
+                        <i data-feather="x-circle" class="mr-2 text-peach-500"></i> Yang Harus Dihindari
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="bg-peach-100 p-2 rounded-full mr-3">
+                                <i data-feather="x" class="text-peach-600"></i>
+                            </div>
+                            <span>Sabun dengan pewangi, busa mandi, atau produk feminin beraroma</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-peach-100 p-2 rounded-full mr-3">
+                                <i data-feather="x" class="text-peach-600"></i>
+                            </div>
+                            <span>Celana terlalu ketat atau bahan sintetis seperti nilon</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-peach-100 p-2 rounded-full mr-3">
+                                <i data-feather="x" class="text-peach-600"></i>
+                            </div>
+                            <span>Menggaruk area yang gatal karena dapat memperparah iritasi</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-peach-100 p-2 rounded-full mr-3">
+                                <i data-feather="x" class="text-peach-600"></i>
+                            </div>
+                            <span>Penggunaan tisu toilet berwarna atau beraroma</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-peach-100 p-2 rounded-full mr-3">
+                                <i data-feather="x" class="text-peach-600"></i>
+                            </div>
+                            <span>Mandi air terlalu panas yang dapat mengeringkan kulit</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-white p-6 rounded-xl shadow-sm">
+                <h3 class="text-xl font-semibold mb-4 text-lavender-600">Tips Tambahan</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="flex items-start">
+                        <div class="bg-lavender-100 p-3 rounded-full mr-4">
+                            <i data-feather="droplet" class="text-lavender-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium mb-1">Hidrasi</h4>
+                            <p class="text-sm text-sage-700">Minum cukup air untuk menjaga kelembaban kulit</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-lavender-100 p-3 rounded-full mr-4">
+                            <i data-feather="wind" class="text-lavender-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium mb-1">Sirkulasi Udara</h4>
+                            <p class="text-sm text-sage-700">Biarkan area bernapas saat di rumah</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-lavender-100 p-3 rounded-full mr-4">
+                            <i data-feather="heart" class="text-lavender-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium mb-1">Probiotik</h4>
+                            <p class="text-sm text-sage-700">Konsumsi makanan probiotik untuk keseimbangan flora</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Self Assessment -->
+    <section id="assessment" class="py-16 px-4 md:px-8 lg:px-16 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <div class="bg-sage-50 rounded-xl p-8 shadow-md">
+                <h2 class="text-3xl font-bold mb-6 text-center">Cek Gejala Anda</h2>
+                <p class="text-center mb-8">Isi kuis singkat ini untuk membantu menilai apakah gejala Anda memerlukan konsultasi dokter</p>
+                
+                <form id="assessment-form" class="space-y-6">
+                    <div class="question bg-white p-5 rounded-lg shadow-sm">
+                        <p class="font-medium mb-3">1. Seberapa sering Anda mengalami gatal di area vulva?</p>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q1" value="a" class="mr-2">
+                                <span>Hampir tidak pernah</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q1" value="b" class="mr-2">
+                                <span>Kadang-kadang (1-2 kali seminggu)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q1" value="c" class="mr-2">
+                                <span>Sering (3-5 kali seminggu)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q1" value="d" class="mr-2">
+                                <span>Hampir setiap hari</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question bg-white p-5 rounded-lg shadow-sm">
+                        <p class="font-medium mb-3">2. Seberapa intens gatal yang Anda rasakan?</p>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q2" value="a" class="mr-2">
+                                <span>Ringan (tidak mengganggu aktivitas)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q2" value="b" class="mr-2">
+                                <span>Sedang (mengganggu tapi bisa ditahan)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q2" value="c" class="mr-2">
+                                <span>Berat (sangat mengganggu tidur/aktivitas)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question bg-white p-5 rounded-lg shadow-sm">
+                        <p class="font-medium mb-3">3. Apakah Anda mengalami gejala lain selain gatal?</p>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q3" value="a" class="mr-2">
+                                <span>Tidak, hanya gatal</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q3" value="b" class="mr-2">
+                                <span>Kemerahan atau pembengkakan ringan</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q3" value="c" class="mr-2">
+                                <span>Keputihan yang tidak biasa</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q3" value="d" class="mr-2">
+                                <span>Luka, perdarahan, atau perubahan kulit</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question bg-white p-5 rounded-lg shadow-sm">
+                        <p class="font-medium mb-3">4. Sudah berapa lama Anda mengalami gejala ini?</p>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q4" value="a" class="mr-2">
+                                <span>Kurang dari 1 minggu</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q4" value="b" class="mr-2">
+                                <span>1-2 minggu</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q4" value="c" class="mr-2">
+                                <span>Lebih dari 2 minggu</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q4" value="d" class="mr-2">
+                                <span>Lebih dari 1 bulan</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question bg-white p-5 rounded-lg shadow-sm">
+                        <p class="font-medium mb-3">5. Apakah perawatan mandiri sudah membantu?</p>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q5" value="a" class="mr-2">
+                                <span>Ya, gejala membaik</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q5" value="b" class="mr-2">
+                                <span>Sedikit membaik</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q5" value="c" class="mr-2">
+                                <span>Tidak ada perubahan</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q5" value="d" class="mr-2">
+                                <span>Semakin memburuk</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full bg-sage-600 hover:bg-sage-700 text-white py-3 px-4 rounded-lg font-medium transition duration-300 flex items-center justify-center">
+                        <i data-feather="clipboard" class="mr-2"></i> Lihat Hasil
+                    </button>
+                </form>
+
+                <div id="assessment-result" class="hidden mt-8 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <i data-feather="alert-circle" class="mr-2"></i>
+                        <span id="result-title">Hasil Assessment</span>
+                    </h3>
+                    <p id="result-content" class="mb-4"></p>
+                    <div id="result-action" class="mt-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-4 md:px-8 lg:px-16 bg-sage-50">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold mb-10 text-center">Pertanyaan yang Sering Diajukan</h2>
+            
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="faq-item bg-white p-5 rounded-lg shadow-sm cursor-pointer transition duration-300 hover:shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-medium">Apakah pruritus vulvae menular?</h3>
+                        <i data-feather="chevron-down" class="text-sage-500 faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer hidden mt-3 pt-3 border-t border-sage-100">
+                        <p>Pruritus vulvae sendiri bukan penyakit menular, tetapi jika disebabkan oleh infeksi seperti jamur atau bakteri, maka infeksi tersebut bisa menular melalui kontak seksual atau berbagi barang pribadi seperti handuk.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item bg-white p-5 rounded-lg shadow-sm cursor-pointer transition duration-300 hover:shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-medium">Kapan harus ke dokter?</h3>
+                        <i data-feather="chevron-down" class="text-sage-500 faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer hidden mt-3 pt-3 border-t border-sage-100">
+                        <p>Anda sebaiknya berkonsultasi dengan dokter jika: gejala berlangsung lebih dari 2 minggu, disertai keputihan abnormal, ada luka atau perdarahan, gatal sangat parah mengganggu tidur, atau jika Anda hamil/memiliki kondisi medis tertentu seperti diabetes.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item bg-white p-5 rounded-lg shadow-sm cursor-pointer transition duration-300 hover:shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-medium">Apakah boleh menggunakan bedak di area vulva?</h3>
+                        <i data-feather="chevron-down" class="text-sage-500 faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer hidden mt-3 pt-3 border-t border-sage-100">
+                        <p>Penggunaan bedak biasa tidak disarankan karena dapat menyebabkan iritasi lebih lanjut. Jika diperlukan kelembaban, gunakan produk khusus yang diformulasikan untuk area sensitif dan bebas talk. Lebih baik menjaga area tetap kering dengan pakaian dalam katun dan menghindari kelembaban berlebihan.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item bg-white p-5 rounded-lg shadow-sm cursor-pointer transition duration-300 hover:shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-medium">Apakah hubungan seksual memperparah kondisi?</h3>
+                        <i data-feather="chevron-down" class="text-sage-500 faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer hidden mt-3 pt-3 border-t border-sage-100">
+                        <p>Hubungan seksual dapat memperparah iritasi jika area vulva sudah meradang. Disarankan untuk: menggunakan pelumas berbasis air (bebas gliserin), menghindari kontak saat gejala akut, memastikan kebersihan sebelum dan sesudah berhubungan, serta menggunakan kondom jika dicurigai ada infeksi menular.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item bg-white p-5 rounded-lg shadow-sm cursor-pointer transition duration-300 hover:shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-medium">Bagaimana membedakan pruritus vulvae dengan infeksi jamur?</h3>
+                        <i data-feather="chevron-down" class="text-sage-500 faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer hidden mt-3 pt-3 border-t border-sage-100">
+                        <p>Infeksi jamur biasanya disertai dengan: keputihan kental putih seperti keju cottage, bau yang khas, kemerahan yang lebih intens, dan rasa gatal yang memburuk sebelum menstruasi. Pruritus vulvae tanpa infeksi lebih sering berupa gatal dengan sedikit atau tanpa keputihan abnormal. Namun, diagnosis pasti harus dilakukan oleh dokter melalui pemeriksaan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <script src="components/footer.js"></script>
+    <custom-footer></custom-footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-sage-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-sage-700">
+        <i data-feather="arrow-up"></i>
+    </button>
+
+    <script src="components/navigation.js"></script>
+<script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+
+</body>
+</html>
