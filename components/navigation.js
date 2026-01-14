@@ -88,7 +88,7 @@ class CustomNavigation extends HTMLElement {
 
             <nav>
                 <div class="container">
-                    <a href="#dashboard" class="brand">VulvaVital</a>
+                    <a href="#dashboard" class="brand">HyTalks</a>
                     <div class="toggle" id="toggle">☰</div>
                     <div class="menu" id="menu">
                         <a href="#understanding">Pengertian</a>
@@ -110,3 +110,4 @@ class CustomNavigation extends HTMLElement {
 }
 
 customElements.define('custom-navigation', CustomNavigation);
+
